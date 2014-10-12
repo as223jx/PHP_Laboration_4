@@ -98,6 +98,9 @@ class LoginController {
 						$this->view->registerMsg(false);
 					}
     		    }
+				// else{
+					// $this->view->updateUsername($this->username);
+				// }
 		    }
 			return $this->view->showRegisterForm();
 		}

@@ -71,27 +71,6 @@ class LoginModel {
 		    $_SESSION[$this->browser] = $_SERVER["HTTP_USER_AGENT"];
 			return true;
 		}
-		// while (!feof($fh)){
-			// $line = fgets($fh);
-			// $line = trim($line);
-// 			
-			// $linesArr[] = $line;
-		// }
-		// fclose($fh);
-		// echo $linesArr[0];
-		// echo $username;
-		// for($i = 0; $i < count($linesArr); $i++){
-			// if($username === $linesArr[$i] && $password === $linesArr[$i+1] || $username === $linesArr[$i] && $password === md5($linesArr[$i+1])){
-				// $_SESSION[$this->loggedIn] = 1;
-			    // $_SESSION[$this->browser] = $_SERVER["HTTP_USER_AGENT"];
-				// return true;
-			// }
-// 
-			// else{
-				// return false;
-			// }
-			// $i++;
-		// }
 	}
 	
 	public function addUser(User $user) {

@@ -156,7 +156,7 @@ class LoginView {
 	    			$updatedUsername .= $username[$i];	
 	    		}
 	    	}
-			$this->username = $updatedUsername;
+			$_POST["regUsername"] = $updatedUsername;
 	    	$this->msg = "<p>Användarnamnet innehåller ogiltiga tecken</p>";
 			return false;
 	    }
@@ -178,7 +178,7 @@ class LoginView {
 	    
 	    return true;
 	}
-	
+
 	// Kollar om kakorna har förfallit
 	public function checkIfCookieExpired(){
         $expire = fopen("src/cookieExpire.txt", "r");
